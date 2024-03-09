@@ -1,3 +1,8 @@
 .list-name {
     font-weight: 300;
 }
+ul {
+    text-align: left;
+    list-style: disc;
+}
+
