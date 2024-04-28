@@ -12,48 +12,32 @@
 
     </head>
     <body>
-        <div class="container">
+        <div class="container-fluid">
                 <h1 class="text-center list-name">Grocery List</h1>
             <div class="row text-center">
-                <div class="col-sm-12">
+                <div class="col col-lg-6 col-sm-12">
                     <!-- Categories. Meats, Dairy, Produce, Aisle food, Snacks -->
-                    <h3 class="category list-name">Meats</h3>
-                    <ul class="list-group text-center" id="Meats">
-                        <li class="list-group-item">Chicken</li>
-                        <li class="list-group-item">Turkey</li>
-                        <li class="list-group-item">Beef</li>
-
-                    </ul>
+                    <h3 class="category list-name" hidden>Meats</h3>
+                        <ul class="list-group text-center" id="Meats">
+                        </ul>
                 </div>
-                <div class="col-sm-12">
-                    <h3 class="category list-name">Produce</h3>
-                    <ul class="list-group text-center" id="Produce">
-                        <li class="list-group-item">Onion (yellow)</li>
-                        <li class="list-group-item">Shredded Carrots</li>
-                        <li class="list-group-item">Fruit</li>
-                        
-                    </ul>
+                <div class="col col-lg-6 col-sm-12">
+                    <h3 class="category list-name" hidden>Produce</h3>
+                        <ul class="list-group text-center" id="Produce">
+                        </ul>
                 </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-sm-12">
-                    <h3 class="category list-name">Dairy</h3>
-                    <ul class="list-group text-center" id="Dairy">
-                        <li class="list-group-item">Burrata</li>
-                        <li class="list-group-item">Half n Half</li>
-                        <li class="list-group-item">Cream Cheese</li>
-                    </ul>
+            
+                <div class="col col-lg-6 col-sm-12">
+                    <h3 class="category list-name" hidden>Dairy</h3>
+                        <ul class="list-group text-center" id="Dairy">
+                        </ul>
                 </div>
-                <div class="col-sm-12">
-                    <h3 class="category list-name">Aisle Stuff</h3>
-                    <ul class="list-group text-center" id="Aisle-Stuff">
-
-                        <li class="list-group-item">Roasted Hazelnuts</li>
-                        <li class="list-group-item">Gnocchi (16 oZ)</li>
-                        <li class="list-group-item">Chicken Broth</li>
-                    </ul>
+                <div class="col col-lg-6 col-sm-12">
+                    <h3 class="category list-name" hidden>Aisle Stuff</h3>
+                        <ul class="list-group text-center" id="Aisle-Stuff">
+                        </ul>
+                
                 </div>
-            </div>
 
             <h2 class="text-center list-name">Add Item</h2>
             <div class="input-group mb-3">
@@ -68,6 +52,7 @@
 
                 </select>
             </div>
+        </div>
         </div>
         <!-- Bootstrap Script link -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

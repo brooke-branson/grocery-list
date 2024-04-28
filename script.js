@@ -1,7 +1,13 @@
 // document.querySelector("#item").addEventListener("keypress", addItem)
 // document.querySelector("#quantity").addEventListener("keypress", addItem)
-document.querySelector("#category").addEventListener("change", addItem)
+document.querySelector("#category").addEventListener("input", addItem)
 
+let listSelector = document.querySelectorAll("li");
+
+listSelector.forEach(function(elem) {
+    elem.addEventListener("click", removeItem)
+    }
+)
 
 function addItem(e){
 
@@ -26,7 +32,11 @@ function addItem(e){
     }
 
     if (item && quantity){
+
+        document.querySelector(`#${category}`).previousElementSibling.removeAttribute("hidden")
         document.querySelector(`#${category}`).innerHTML += `<li class='list-group-item'>${item} ${quantity}</li>`
+        document.querySelector(`#${category}`).lastElementChild.addEventListener('click', removeItem)
+        
     }
     console.log(item, quantity, category)
 
@@ -34,5 +44,6 @@ function addItem(e){
 }
 
 function removeItem(e){
-    prompt("You you want to remove this item?")
-}
+    prompt("This has happened")
+    e.target.setAttribute("hidden", true)
+    }
