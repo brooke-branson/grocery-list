@@ -4,7 +4,7 @@ document.querySelector("#category").addEventListener("change", addItem)
 
 
 function addItem(e){
-    
+
     /*
     Listens for the final click on the category box, then adds the items and quantity
     to the desired list category.
@@ -31,4 +31,8 @@ function addItem(e){
     console.log(item, quantity, category)
 
     return item, quantity, category
+}
+
+function removeItem(e){
+    prompt("You you want to remove this item?")
 }
