@@ -12,28 +12,28 @@
 
     </head>
     <body>
-        <div class="container-fluid">
+        <div class="container-fluid min-vh-100">
                 <h1 class="text-center list-name">Grocery List</h1>
             <div class="row text-center">
                 <div class="col col-lg-6 col-sm-12">
                     <!-- Categories. Meats, Dairy, Produce, Aisle food, Snacks -->
-                    <h3 class="category list-name" hidden>Meats</h3>
+                    <h3 class="category list-name" >Meats</h3>
                         <ul class="list-group text-center" id="Meats">
                         </ul>
                 </div>
                 <div class="col col-lg-6 col-sm-12">
-                    <h3 class="category list-name" hidden>Produce</h3>
+                    <h3 class="category list-name" >Produce</h3>
                         <ul class="list-group text-center" id="Produce">
                         </ul>
                 </div>
             
                 <div class="col col-lg-6 col-sm-12">
-                    <h3 class="category list-name" hidden>Dairy</h3>
+                    <h3 class="category list-name" >Dairy</h3>
                         <ul class="list-group text-center" id="Dairy">
                         </ul>
                 </div>
                 <div class="col col-lg-6 col-sm-12">
-                    <h3 class="category list-name" hidden>Aisle Stuff</h3>
+                    <h3 class="category list-name" >Aisle Stuff</h3>
                         <ul class="list-group text-center" id="Aisle-Stuff">
                         </ul>
                 
@@ -41,6 +41,7 @@
 
             <h2 class="text-center list-name">Add Item</h2>
             <div class="input-group mb-3">
+                
                 <input type="text" class="form-control" id="item" placeholder="Item" aria-label="Item">
                 <input type="text" class="form-control" id="quantity" placeholder="Quantity" aria-label="Quantity">
                 <select name="category" class="form-control" id="category">
@@ -49,9 +50,11 @@
                     <option value="Produce">Produce</option>
                     <option value="Dairy">Dairy</option>
                     <option value="Aisle-Stuff">Aisle Stuff</option>
-
                 </select>
+                <button type="button" class="btn btn-primary" id="submitButton">Add</button>
+
             </div>
+            <button type="button" class="btn btn-secondary col-3 mx-auto" id="undoButton">Undo</button>
         </div>
         </div>
         <!-- Bootstrap Script link -->
