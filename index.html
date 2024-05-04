@@ -40,10 +40,14 @@
                 </div>
 
             <h2 class="text-center list-name">Add Item</h2>
-            <div class="input-group mb-3">
-                
+            <div class="input-group mb-3 justify-content-md-center">
+                <div>
                 <input type="text" class="form-control" id="item" placeholder="Item" aria-label="Item">
+                </div>
+                <div>
                 <input type="text" class="form-control" id="quantity" placeholder="Quantity" aria-label="Quantity">
+                </div>
+                <div>
                 <select name="category" class="form-control" id="category">
                     <option value="placeholder">Select a Category</option>
                     <option value="Meats">Meats</option>
@@ -51,10 +55,15 @@
                     <option value="Dairy">Dairy</option>
                     <option value="Aisle-Stuff">Aisle Stuff</option>
                 </select>
-                <button type="button" class="btn btn-outline-primary" id="submitButton">Add</button>
+                </div>
+                <div>
+                <button onclick="alert('Are you sure?')" type="button" class="btn btn-outline-primary" id="submitButton">Add</button>
+                </div>
+                <div>
+                <button  type="button" class="btn btn-outline-secondary" id="undoButton">Undo</button>
+                </div>
 
             </div>
-            <button type="button" class="btn btn-secondary col-3 mx-auto" id="undoButton">Undo</button>
         </div>
         </div>
         <!-- Bootstrap Script link -->
